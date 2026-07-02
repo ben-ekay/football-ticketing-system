@@ -1,6 +1,6 @@
 # Football Ticketing System
 
-This project is a web-based football ticketing system developed as part of my university work-based learning module.
+Football ticket booking system developed using PHP and MySQL.
 
 ## Technologies Used
 - HTML
