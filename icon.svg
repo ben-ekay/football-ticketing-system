@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background gradient (stadium dark to stadium blue) -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2540"/>
+      <stop offset="100%" stop-color="#1a3a6e"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#00b8df"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="110" ry="110" fill="url(#bgGrad)"/>
+
+  <!-- Diagonal stripe pattern (subtle) -->
+  <g opacity="0.08">
+    <line x1="0" y1="100" x2="512" y2="612" stroke="#fff" stroke-width="2"/>
+    <line x1="0" y1="200" x2="512" y2="712" stroke="#fff" stroke-width="2"/>
+    <line x1="0" y1="300" x2="512" y2="812" stroke="#fff" stroke-width="2"/>
+    <line x1="-100" y1="0" x2="412" y2="512" stroke="#fff" stroke-width="2"/>
+    <line x1="-200" y1="0" x2="312" y2="512" stroke="#fff" stroke-width="2"/>
+  </g>
+
+  <!-- Ticket shape (white, central) -->
+  <g transform="translate(106, 156)">
+    <!-- Main ticket body -->
+    <rect x="0" y="0" width="300" height="200" rx="20" ry="20" fill="#ffffff"/>
+
+    <!-- Cyan stripe at top (like our header) -->
+    <rect x="0" y="0" width="300" height="50" rx="20" ry="20" fill="url(#cyanGrad)"/>
+    <rect x="0" y="30" width="300" height="20" fill="url(#cyanGrad)"/>
+
+    <!-- "G" letter, big and bold (Bebas Neue style) -->
+    <text x="150" y="155"
+          font-family="Arial Black, sans-serif"
+          font-size="120"
+          font-weight="900"
+          fill="#0a2540"
+          text-anchor="middle">G</text>
+
+    <!-- Perforation line (ticket effect) -->
+    <line x1="220" y1="0" x2="220" y2="200"
+          stroke="#cccccc" stroke-width="2" stroke-dasharray="6 4"/>
+
+    <!-- Small circles on perforation (ticket holes) -->
+    <circle cx="220" cy="0" r="10" fill="url(#bgGrad)"/>
+    <circle cx="220" cy="200" r="10" fill="url(#bgGrad)"/>
+  </g>
+
+  <!-- "GoalTicket" text below -->
+  <text x="256" y="430"
+        font-family="Arial Black, sans-serif"
+        font-size="48"
+        font-weight="900"
+        fill="#ffffff"
+        text-anchor="middle"
+        letter-spacing="2">GOALTICKET</text>
+</svg>
