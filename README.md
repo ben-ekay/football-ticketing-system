@@ -51,6 +51,19 @@ football-ticketing-system/
 ├── css/
 ├── js/
 └── index.php
+## 📸 Screenshots
+
+### Homepage
+
+![Homepage](screenshots/homepage.png)
+
+### Fixtures
+
+![Fixtures](screenshots/fixtures.png)
+
+### Admin Dashboard
+
+![Admin Dashboard](screenshots/admindashboard.png)
 
 ## 🎯 Learning Outcomes
 
