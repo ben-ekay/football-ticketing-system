@@ -46,6 +46,19 @@ The aim of this project is to create a platform where users can browse football 
 5. Start Apache and MySQL.
 6. Open the project in your browser.
 
+## ✨ Key Features
+
+- User registration and login
+- Secure ticket booking
+- QR code ticket generation
+- QR ticket validation
+- Email booking confirmation
+- Admin dashboard
+- Fixture management
+- MySQL database integration
+- Progressive Web App (PWA) support
+
+  
 ## 🗄 Database
 
 The project uses MySQL for storing:
@@ -55,7 +68,15 @@ The project uses MySQL for storing:
 - Ticket information
 - Booking records
 
+The SQL database is included in the `database/` folder.
 
+To set up the project:
+
+1. Create a new MySQL database.
+2. Import the SQL file.
+3. Update the database credentials in `config.php`.
+4. Start Apache and MySQL.
+   
 ## 📂 Project Structure
 
 football-ticketing-system/
@@ -92,12 +113,22 @@ Through this project I developed skills in:
 - User interface development
 - Project organisation using GitHub
 
+  ## 🚀 Future Improvements
+
+- Online payment integration
+- Email notifications for fixture updates
+- User profile management
+- Ticket cancellation feature
+- REST API
+- Mobile application
+
 
 ## 👨‍💻 Author
 
-Benjamin Ekay
+**Benjamin Ekay**
 
-Computing Student | Aspiring Software Engineer
+Computing Student in London  
+Aspiring Software Engineer
 
-LinkedIn:
-www.linkedin.com/in/benjamin-ekay
+- LinkedIn: https://www.linkedin.com/in/benjamin-ekay
+- GitHub: https://github.com/ben-ekay
