@@ -28,6 +28,23 @@ The aim of this project is to create a platform where users can browse football 
 - Apache
 - Git/GitHub
 
+## 🚀 Getting Started
+
+### Requirements
+
+- PHP 8.0 or later
+- MySQL
+- XAMPP, MAMP or another local server
+- Composer
+
+### Installation
+
+1. Clone this repository.
+2. Create a MySQL database.
+3. Import the SQL database file.
+4. Update the database credentials in `config.php`.
+5. Start Apache and MySQL.
+6. Open the project in your browser.
 
 ## 🗄 Database
 
