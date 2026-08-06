@@ -61,34 +61,38 @@ The aim of this project is to create a platform where users can browse football 
   
 ## 🗄 Database
 
-The project uses MySQL for storing:
-
-- User information
-- Football fixtures
-- Ticket information
-- Booking records
-
 The SQL database is included in the `database/` folder.
 
-To set up the project:
+It stores:
 
-1. Create a new MySQL database.
-2. Import the SQL file.
-3. Update the database credentials in `config.php`.
+- User accounts
+- Football fixtures
+- Ticket bookings
+- Booking records
+
+### Setup
+
+1. Create a MySQL database.
+2. Import `football_ticketing_system.sql`.
+3. Update `config.php`.
 4. Start Apache and MySQL.
+5. Run the project.
    
 ## 📂 Project Structure
 
 football-ticketing-system/
 
-├── admin/
-├── config/
 ├── database/
-├── images/
-├── includes/
-├── css/
-├── js/
-└── index.php
+├── screenshots/
+├── README.md
+├── index.php
+├── login.php
+├── register.php
+├── dashboard.php
+├── fixtures.php
+├── book.php
+├── scan.php
+
 ## 📸 Screenshots
 
 ### Homepage
