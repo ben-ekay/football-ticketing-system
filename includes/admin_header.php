@@ -1,4 +1,7 @@
 <?php require_once __DIR__ . '/admin_guard.php'; ?>
+<?php
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,15 +45,61 @@
         <h1><a href="<?php echo SITE_URL; ?>/admin/dashboard.php">Goal<span>Ticket</span> <small>Admin</small></a></h1>
 
         <nav class="admin-nav">
-            <ul>
-                <li><a href="<?php echo SITE_URL; ?>/admin/dashboard.php">Dashboard</a></li>
-                <li><a href="<?php echo SITE_URL; ?>/admin/fixtures.php">Fixtures</a></li>
-                <li><a href="<?php echo SITE_URL; ?>/admin/scan.php">Scan Tickets</a></li>
-<li><a href="<?php echo SITE_URL; ?>/admin/admins.php">Admins</a></li>
-<li><a href="<?php echo SITE_URL; ?>/admin/support.php">Help</a></li>
-                <li><a href="<?php echo SITE_URL; ?>/admin/logout.php">Log Out</a></li>
-            </ul>
-        </nav>
+    <ul>
+
+        <li>
+            <a
+                class="<?= $currentPage === 'dashboard.php' ? 'active' : '' ?>"
+                href="<?php echo SITE_URL; ?>/admin/dashboard.php"
+            >
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a
+                class="<?= in_array($currentPage, ['fixtures.php', 'fixture_form.php'], true) ? 'active' : '' ?>"
+                href="<?php echo SITE_URL; ?>/admin/fixtures.php"
+            >
+                Fixtures
+            </a>
+        </li>
+
+        <li>
+            <a
+                class="<?= $currentPage === 'scan.php' ? 'active' : '' ?>"
+                href="<?php echo SITE_URL; ?>/admin/scan.php"
+            >
+                Scan Tickets
+            </a>
+        </li>
+
+        <li>
+            <a
+                class="<?= $currentPage === 'admins.php' ? 'active' : '' ?>"
+                href="<?php echo SITE_URL; ?>/admin/admins.php"
+            >
+                Admins
+            </a>
+        </li>
+
+        <li>
+            <a
+                class="<?= $currentPage === 'support.php' ? 'active' : '' ?>"
+                href="<?php echo SITE_URL; ?>/admin/support.php"
+            >
+                Help
+            </a>
+        </li>
+
+        <li>
+            <a href="<?php echo SITE_URL; ?>/admin/logout.php">
+                Log Out
+            </a>
+        </li>
+
+    </ul>
+</nav>
     </div>
 </header>
 

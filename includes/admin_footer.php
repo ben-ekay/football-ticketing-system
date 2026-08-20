@@ -3,7 +3,7 @@
 
 <footer class="admin-footer">
     <div class="container">
-        <p>&copy; <?php echo date('Y'); ?> <?php echo SITE_NAME; ?> Admin Panel</p>
+        <p>&copy; <?php echo date('Y'); ?> <?php echo htmlspecialchars(SITE_NAME); ?> Admin Panel</p>
     </div>
 </footer>
     <!-- PWA install banner -->

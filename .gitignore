@@ -1,0 +1,19 @@
+# Dependencies
+/vendor/
+
+# Local/generated files
+/email_log/
+/uploads/
+
+# macOS
+.DS_Store
+
+# Environment/local configuration
+.env
+.env.*
+config/database.local.php
+config/config.local.php
+
+# IDE/editor
+.vscode/
+.idea/

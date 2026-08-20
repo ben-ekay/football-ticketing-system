@@ -39,8 +39,13 @@ $tickets_sold   = $pdo->query("SELECT COUNT(*) FROM tickets")->fetchColumn();
 <div class="card">
     <h3 style="color: #1a3a5c; margin-bottom: 12px;">Quick actions</h3>
     <p style="margin-bottom: 15px;">From here you can manage everything related to matchday ticketing.</p>
-    <a href="fixtures.php" class="btn" style="margin-right: 8px;">Manage Fixtures</a>
-    <a href="scan.php" class="btn">Scan Tickets at the Gate</a>
+    <a href="<?php echo SITE_URL; ?>/admin/fixtures.php" class="btn" style="margin-right: 8px;">
+    Manage Fixtures
+</a>
+
+<a href="<?php echo SITE_URL; ?>/admin/scan.php" class="btn">
+    Scan Tickets at the Gate
+</a>
 </div>
 
 <?php require_once __DIR__ . '/../includes/admin_footer.php'; ?>
